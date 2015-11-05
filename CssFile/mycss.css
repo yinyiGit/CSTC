@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+    font: 14px/1.5 "Arial","Heiti SC","SimHei","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+img{
+    width:100%;
+    height:100%;
+}
+a {
+    color: #6f6f6f;  text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#topDiv
+{   background: url("../CSTC/top.png") no-repeat center center ;
+    background-size:100% 100%;
+    height: 25px;
+    margin: 0 auto;
+    width:100%;
+    text-align:right;
+    position:fixed;
+    z-index: 999;/*位于最上层*/
+}
+#topUl
+{   margin-left: 900px;
+    width:275px;
+    line-height:25px;
+}
+#topUl li
+{   float: left;
+    display: inline-block;
+    font-family:"Microsoft YaHei";
+
+}
+#topUl a
+{   text-decoration: none;
+    color: #fff;
+    border-right: 1px solid #eee;
+    line-height: 1em;
+    display: inline-block;
+    font-size:14px;
+    margin-right:10px;
+    padding-right: 5px;
+}
+ #topUl.a:nth-last-child (1){
+     border-right: medium none;
+ }
+#container{
+    width:1020px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 20px #aaa;
+    padding: 30px 30px 30px 30px;
+    margin:0 auto;
+}
+#titleDiv{
+    height:65px;
+    width:960px;
+    margin-bottom: 26px;
+}
+  .logo{
+      width:65px;height:65px;float:left
+  }
+  .title{
+      width:630px;float:left;padding:0 0 0 15px;font-size: 38px;line-height: 65px;text-align:left
+  }
+  .search{
+      width: 261px;height: 37px;float:left;border: 2px solid #424242;padding: 8px 34px 8px 8px;margin-top:18px;
+  }
+  .searchText{
+      line-height:17px;border:0;width:190px;margin:0 auto;
+  }
+  .searchButton{
+      background-image: url("../CSTC/glass.png");width:20px;border: medium none;cursor: pointer;margin-right: -60px;
+
+  }
+ #menu{
+  /*   -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;*/
+     height:44px;
+     border-color: #e2e2e2 ;
+     /*border-image: none;*/
+     border-style: solid none;
+     border-width: 2px medium;
+     color: #474747;
+     font-size: 18px;
+     line-height: 2em;
+     list-style: outside none none;
+     margin-top: 20px;
+ }
+  #menu li{
+      background: rgba(0, 0, 0, 0) url("../CSTC/menu-tag.png") no-repeat scroll left center;
+      display: block;
+      float: left;
+      margin: 5px 0 5px 1em;
+      padding-left: 22px;
+  }
+  #menu li a{
+      color: #828282;
+      display: block;
+      font-size: 18px;
+      line-height: 30px;
+  }
+ #menu li a:hover,  #menu li a.active {
+    color: #60aacf;
+    text-decoration: none;
+}
+#carouselDiv{
+     margin-top: -10px;
+ }
+#carouselDiv .carousel{position:relative;}
+
+#carouselDiv .carousel>ul{
+     height: 348px;
+     list-style: outside none none;
+     overflow: hidden;<!-- 隐藏溢出 -->
+     position: relative;
+ }
+#carouselDiv .carousel> ul li{
+     display: block;
+     height: 100%;
+ /*    left: 100%;
+     position: absolute;*/
+     width: 100%;
+ }
+#carouselDiv .carousel> ul li a{
+    display: block;
+    height: 100%;
+
+}
+#carouselDiv .carousel .anchors{
+     bottom: 10px;
+     position: absolute;
+     right: 10px;
+ }
+#carouselDiv .carousel.anchors ul{
+     list-style: outside none none;
+ }
+#carouselDiv .carousel .anchors ul li{
+     float:left;
+     margin-right: 5px;
+    list-style: outside none none;
+  }
+#carouselDiv .carousel .anchors ul li a{
+     background: rgba(0, 0, 0, 0) url("../CSTC/banner-anchor.png") no-repeat scroll center center;
+     width:23px;
+     height:23px;
+     display:block;
+ }
+#carouselDiv .carousel .anchors ul li a.active{background-image: url("../CSTC/banner-anchor-active.png");}
+
+#newsDiv{
+    margin-top:10px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.newBar{
+   /* -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;*/
+    border-color: #e2e2e2 ;
+    /*border-image: none;*/
+    border-style: solid none;
+    border-width: 2px medium;
+    color: #474747;
+    font-size: 18px;
+    line-height: 2em;
+}
+.newBar::before, .newBar::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.newBar::after {
+    clear: both;
+}
+.newBar1{
+    float: left;
+    width: 50%;
+}
+.cusp {
+    position: relative;
+    text-align: center;
+}
+.cusp::after {
+    background: #fff url("../CSTC/cusp.png") no-repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 14px;
+    left: 50%;
+    margin: 0 0 -13px -12px;
+    position: absolute;
+    width: 24px;
+}
+.news{
+    float: left;
+    width: 50%;
+}
+.news ul{
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+.news ul li{
+    background: rgba(0, 0, 0, 0) url("../CSTC/news-tag.png") no-repeat scroll left center;
+    list-style: none;
+    padding-left: 5px;
+
+}
+.news ul li.top {
+    background-image: url("../CSTC/news-tag-top.png");
+}
+.news ul li a{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 15px;
+    text-align: left;
+    line-height: 1.8em;
+}
+.news:last-of-type ul {
+    border-left: 2px solid #e2e2e2;
+}
+#pictureDiv{
+    margin-top: 10px;
+}
+.album{
+    margin-top:20px;
+}
+.album-link{
+    height:190px;
+    width:23px;
+    display: block;
+}
+.left{
+    background:rgba(0,0,0,0) url("../CSTC/album-left.png")no-repeat scroll 0 0;
+    float: left;
+}
+.right{
+    background: rgba(0,0,0,0) url("../CSTC/album-right.png")no-repeat scroll 0 0;
+    float: right;
+}
+.show{
+    height:190px;
+    overflow: hidden;
+    position: relative;
+}
+ .show ul {
+    display: block;
+    height: 100%;
+    list-style: outside none none;
+    position: absolute;
+    width: 300%;
+}
+ .show ul li {
+    display: block;
+    float: left;
+    padding: 0 2px;
+}
+ .show li a {
+    display: block;
+}
+
+ #footDiv{
+     background-color: #60aacf;
+     border-top: 1px solid #3a95c2;
+     color: #fff;
+     height: 138px;
+     margin-top: 20px;
+     padding-top: 30px;
+     position: relative;
+ }
+ .footleft{
+     border-bottom: 2px solid #fff;
+     float:left;
+     margin-left: 166px;
+     width:36%;
+     padding-left: 100px;
+ }
+.footright{
+    border-bottom: 2px solid #fff;
+    float:left;
+    width:36%;
+    margin-left: 50px;
+}
+.footleft ul {
+    display: block;
+    float: left;
+    text-align: center;
+}
+.footleft ul li{
+    float: left;
+    line-height: 40px;
+    margin-left: 30px;
+}
+ .footmiddle{
+     background: url("../CSTC/truncheon.png") no-repeat scroll 0 0;
+     height: 85px;
+     width: 50px;
+     left: 50%;
+     margin-left: -15px;
+     position: absolute;
+     top: 30px;
+
+ }
+
+.footright ul {
+    display: block;
+    float: left;
+    text-align: center;
+}
+.footright ul li{
+    float: left;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.footright li:first-child {
+    list-style: outside none none;
+    padding-left: 0;
+}
